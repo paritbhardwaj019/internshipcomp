@@ -76,6 +76,8 @@ export default function Modal({
     };
     setAllPosts([...allPosts, data]);
     setShowModal(false);
+    setTitle("");
+    setContent("");
   };
 
   return (
