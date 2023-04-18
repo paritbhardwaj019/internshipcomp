@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #f4f4f4;
+}
+
+@font-face {
+  font-family: Graphik;
+  src: url("/fonts/Graphik-Regular-Trial.otf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Graphik;
+  src: url("/fonts/Graphik-Bold-Trial.otf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Graphik;
+  src: url("/public/fonts/Graphik-Medium-Trial.otf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Graphik;
+  src: url("/public/fonts/Graphik-Semibold-Trial.otf");
+  font-weight: 600;
+}
+
+.animate__btn:active {
+  transform: scale(0.95);
+}
+.custom__scrollbar::-webkit-scrollbar-track {
+  scroll-behavior: smooth;
+}
+
+.custom__btn {
+  background: linear-gradient(93.44deg, #6553ea 44.18%, #3f52e1 99.96%);
+  border-radius: 10px;
+  padding: 7px 24px;
+}
+
+.custom__btn:hover {
+  transition: opacity 0.35s ease-in-out !important;
+}
+
+.my-editor .ql-editor::before {
+  font-size: 16px;
+  font-family: "Graphik";
+  font-style: normal;
+  color: #a5aab4;
+}
+
+.my-editor .ql-editor {
+  font-size: 16px;
+  font-family: "Graphik";
+  font-style: normal;
+  color: "#212121";
+}
+
+.fade__effect::before {
+  z-index: 1;
+  content: "";
+  width: 100%;
+  height: 30%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, hsla(0, 0%, 100%, 0), #fff);
+}
+
+.custom__btn__send {
+  background: linear-gradient(93.44deg, #6553ea 44.18%, #3f52e1 99.96%);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+
+.nav__bg {
+  background: linear-gradient(280.39deg, #071530 64.59%, #405a86 109.59%);
+  width: 100%;
+  height: 56px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+  z-index: 9999999999;
+}
+
+.sidebar__class {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  background: white;
+}
+
+.high__z {
+  z-index: 999;
+}
